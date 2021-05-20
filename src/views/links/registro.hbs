@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/registro.css">
+    <title>Registro | BI CIH</title>
+</head>
+<body>
+    <div class="col-s-12 col-s-12 col-m-12 col-l-12 container">
+        <div class="col-s-11 col-m-8 col-l-6 log">
+            <form action="/links/registro/" method="POST">
+                <div class="col-s-12 col-m-12 col-l-12 dv1">
+                    <h1>REGISTRO BI DE CIHUMANA</h1>
+                </div>
+                <div class="col-s-12 col-m-12 col-l-12 dv2">
+                    <div class="col-s-12 col-m-12 col-l-12 dv22">
+                        <input class="dis" name="nombre" type="text" placeholder="Ingresa tu nombre/usuario" class="" required>
+                    </div>
+                    <div class="col-s-12 col-m-12 col-l-12 dv22">
+                        <input class="dis" name="appat" type="text" placeholder="Ingresa tu apellido paterno" required>
+                    </div>
+                    <div class="col-s-12 col-m-12 col-l-12 dv22">
+                        <input class="dis" name="apmat" type="text" placeholder="Ingresa tu apellido materno" required>
+                    </div>
+                    <div class="col-s-12 col-m-12 col-l-12 dv22">
+                        <input class="dis" name="correo" type="email" placeholder="Ingresa tu correo" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" required>
+                    </div>
+                    <div class="col-s-12 col-m-12 col-l-12 dv22">
+                        <input class="dis" name="celular" type="tel" placeholder="Ingresa tu celular" required>
+                    </div>
+                    <div class="col-s-12 col-m-12 col-l-12 dv22">
+                        <input class="dis" id="pass" name="contrasena" type="password" placeholder="Ingresa tu nueva contraseña" required><br>
+                        <span id="passstrength"></span>
+                    </div>
+                </div>
+                <div class="col-s-12 col-m-12 col-l-12 dv3">
+                    <div class="col-s-12 col-m-12 col-l-12 dv31">
+                        <input class="b1" type="submit" value="ENVIAR">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

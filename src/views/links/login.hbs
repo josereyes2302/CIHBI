@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/login.css">
+
+    <title>BI LOGIN</title>
+</head>
+<body>
+    <div class="login">
+        <div class="col-s-12 col-s-12 col-m-12 col-l-12 container">
+            <div class="col-s-11 col-m-8 col-l-6 log">
+                    <div class="col-s-12 col-m-12 col-l-12 dv1">
+                        <h1>INGRESO A B.I. DE CI HUMANA</h1>
+                    </div>
+                    <div class="col-s-12 col-m-12 col-l-12 dv2">
+                        <div class="col-s-12 col-m-12 col-l-12 dv21">
+                            <input class="dis"  id="nombre" name="nombre" type="text" placeholder="Ingresa tu usuario">
+                        </div>
+                        <div class="col-s-12 col-m-12 col-l-12 dv22">
+                            <input class="dis" id="pass" name="password" type="password" placeholder="Ingresa tu contraseña" >
+                        </div>
+                    </div>
+                    <div class="col-s-12 col-m-12 col-l-12 dv3">
+                        <div class="col-s-12 col-m-12 col-l-12 dv31">
+                            <button type="button" onclick="entrar()"  class="b1">INICIAR SESIÓN</button>
+                        </div>
+                        <span id="passstrength"></span>
+                        <div class="col-s-12 col-m-12 col-l-12 dv32">
+                            <a href="registro"><Label>REGISTRARME</Label></a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+</body>
+    <script src="/js/sha1.js"></script>
+    <script src="/js/validar2.js"></script>
+</html>

@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+html{
+    font-size: 62.5%;
+}
+a{
+    color: #E8E8E8;
+    text-decoration: none;
+}
+
+/*Inicia media para celular celular*/
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(121, 197, 223);
+    width: 100%;
+    height: 100vh;
+}
+.header{
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header h1{
+    font-size: 3rem;
+}
+.logo{
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.logito{
+  display: flex;
+  justify-content: center;
+}
+.logito img{
+    width: 15rem;
+    height: 15rem;
+}
+
+.menu{
+   
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botones{
+    display: flex;
+    height: 70vh;
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.botones button{
+    width: 15rem;
+    height: 9rem;
+    border-radius: 10px;
+    background-color: #3D64CA;
+    color: #E8E8E8;
+    border: none;
+}
+
+#salir{
+    width: 10rem;
+    height: 3rem;
+    background-color: #F01420;
+    border-radius: 15px;
+}
+/*Acaba modo celular */
+
+/*Inicia modo tableta*/
+@media (min-width: 700px){
+.main{
+    width: 100%;
+    height: 100%;
+}
+.header h1{
+    font-size: 4rem
+}
+.logito img{
+    width: 20rem;
+    height: 20rem;
+}
+.menu{
+    margin-top: 6rem;
+}
+.botones button{
+    width: 21rem;
+    height: 10rem;
+    font-size: 2rem;
+}
+};
+/*Acaba modo tableta*/
+
+/* Inicia modo WEB  */
+@media(min-width: 800px){
+.main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+}
+.logito img{
+    width: 10rem;
+    height: 10rem;
+}
+.botones{
+    display: flex;
+    flex-direction: row;
+    
+}
+}
